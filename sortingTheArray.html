@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting the Array Object</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        let library = [
+        {author:'Bill Gates',title:'The Road Ahead',libraryID:1254},
+        {author:'Steve Jobs',title:'Walter Isaacson',libraryID:4264},
+        {author:'Suzanne Collins',title:'Mockingjay The Final Book Of the Hunger Games',libraryID:3245},
+        {author:'Steve Jobs',title:'Walter Isaacson',libraryID:4264},
+    
+        ];
+        
+        let Sorting = library.sort(function (a,b){
+            if(a.title > b.title) {
+                return 1;
+            }
+            else{
+                return -1
+            }
+        });
+       console.table(Sorting);
+    </script>
+</html>
